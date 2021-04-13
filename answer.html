@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="dog">
+    <meta name="description" content="this website is about a dickless dog named gouxiao">
+    <mete name="generator" content="Viaual Studio Code">
+    <meta name="author" content="zh">   
+    <meta http-equiv="content-type" content="text/html;charset=gb2312"/>
+    <title>狗骁</title>
+</head>
+<body>
+<figure>
+<p align="center"><img src="image/dog.jpg"  alt="狗骁" width="450" height="500" usemap="#Map">
+    <map name="Map">
+      <area shape="poly" coords="159,180,175,217,184,226,191,221,190,211,170,173,162,174,163,174" href="zh.html">
+    </map>
+</p>
+<figcaption>
+<p align="center">狗骁</p>
+</figcaption>
+</figure>
+<p id="pTip">开始下载</p>
+<progress value="0" max="100" id="proDownFile"></progress>
+<input type="button" value="下载"   class="inputbtn" onClick="Btn_Click();">
+<script type="text/javascript">
+var intValue=0;
+var intTimer;
+var objPro=document.getElementById('proDownFile');
+var objTip=document.getElementById('pTip');
+function Interval_handler()
+{
+intValue++;
+objPro.value=intValue;
+if(intValue>=objPro.max){clearInterval(intTimer);objTip.innerHTML="下载完成！"}
+else
+{
+objTip.innerHTML="正在下载"+intValue+"%";
+}
+}
+function Btn_Click()
+{
+intTimer=setInterval(Interval_handler,100);
+}
+</script>
+<P>喜爱的食物：</P>
+<p>奥利给
+<meter value="99" optimum="100" high="90" low="10" max="100" min="0" bgcolor="#00000FF">
+</meter>
+<span>99%</span></p>
+<form>
+<p>购买日期：</p>
+<input id="lykongtiao_date" name="linyikongtiao.com" type="date"/>
+<input type="submit" value="提交"/>
+</form>
+<p>购买时间：</p>
+<input id="lykongtiao_time" name="linyikongtiao.com" type="time"/>
+<input type="submit" value="提交"/>
+</form>
+<p id="demo">点击按钮，获得您的坐标：</p>
+<button onclick="getLocation()">试一下</button>
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+{
+  if(navigator.geolocation)
+  {
+    navigator.geolocation.watchPosition(showPosition);
+  }
+  else{x.innerHTML="Geolocation is not suppored by this browser.";}
+}
+function showPosition(position)
+{
+  x.innerHTML="Latitude: "+position.coords.latitude+"<br/>Longitude:"+position.coords.longitude;
+}
+</script>
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+ 
+<br>
+<a name="1"></a>导盲犬
+</body>
